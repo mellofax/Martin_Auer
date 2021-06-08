@@ -1,0 +1,32 @@
+﻿<Page x:Class="Autorization.Pages.News"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Autorization.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="3350" d:DesignWidth="900"
+      Title="News">
+
+    <Grid Background="White">
+        <TextBlock FontSize="35" FontFamily="Arial Black" Margin="198,77,156,3147"><Run Text="     РАБОТА В ПРОЦЕССЕ:"/><LineBreak/><Run Text="    "/><Run Text="НАШ АТЕЛЬЕ СОЗДАН!"/></TextBlock>
+        <TextBlock FontSize="20" Margin="115,203,52,3024"><Run Text="     На нашем нынешнем месте на Дитрихштайнплац хлеб пекут уже около"/><LineBreak/><Run Text=" 675 лет. Нам нравится быть здесь, но мы  Pсталкиваемся"/><Run Text=" "/><Run Text="пространственно, "/><LineBreak/><Run Text="    Вот почему наша новая штаб-квартира в настоящее время строится на углу "/><LineBreak/><Run Text="                "/><Run Text="             "/><Run Text=" Maggstrasse и St. Peter Gürtel. "/></TextBlock>
+        <Polygon Stroke="Black" Points="810,350,120,350"/>
+        <TextBlock FontSize="20" Margin="179,370,108,2866" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.152"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-0.747"/>
+                </TransformGroup>
+            </TextBlock.RenderTransform><Run Text="         "/><Run Text="Студия и фотоэлектрическая система предоставлены"/><LineBreak/><Run Text="   Штирийским агентством экономического развития SFG и "/><LineBreak/><Run Text="    Европейским фондом регионального развития (EFRE)"/><LineBreak/><Run/></TextBlock>
+        <Image Source="/Source/News/EFRE.png" Margin="298,486,264,2764"/>
+        <Polygon Stroke="Black" Points="810,595,120,595"/>
+        <Image Source="/Source/News/First.jpeg" Margin="140,654,104,2266" />
+        <TextBlock FontSize="20" Margin="115,1117,36,1614"><Run Text="     "/><Run Text="        "/><Run Text="Мы назвали его Ателье, потому что это будет рабочее место для"/><LineBreak/><Run Text=" "/><Run Text="  "/><Run Text="творческих людей. "/><Run Text=" "/><Run Text="Он будет готов весной 2021 года. В будущей локации на "/><LineBreak/><Run Text="      "/><Run Text="6500 м2"/><Run Text=" "/><Run Text="будет достаточно места для всей пекарни, нового флагманского"/><LineBreak/><Run Text=" магазина с кафе, собственной мукомольной мельницы, кофейня, наш офис и "/><LineBreak/><Run Text="      "/><Run Text="помещения для академии сотрудников. Больше охлаждающих мощностей "/><LineBreak/><Run Text="             "/><Run Text="позволяет, нам выпекать больше в течение "/><Run Text=" "/><Run Text="дня. "/><LineBreak/><Run/><LineBreak/><Run Text="Пекарня также "/><Run Text=" "/><Run Text="будет полностью видна. Итак, мы можем, наконец, показать, что"/><LineBreak/><Run Text=" "/><Run Text="         "/><Run Text="такое настоящая торговля пекаря есть и что может. Потому что нам"/><LineBreak/><Run Text=" "/><Run Text="                                                   "/><Run Text="нечего скрывать. "/><LineBreak/><Run/><LineBreak/><Run Text="                 Мы строим нашу студию в соответствии с климатическими целями -"/><LineBreak/><Run Text=" "/><Run Text="    "/><Run Text="это для нас само собой важно. Фотоэлектрическая система гарантирует, что"/><LineBreak/><Run Text=" "/><Run Text="            "/><Run Text="у нас не будет CO2, что позволит снизить выбросы. Мы используем"/><LineBreak/><Run Text="                              "/><Run Text=" отработанное тепло наших печей и систем "/><LineBreak/><Run Text="                           "/><Run Text="            "/><Run Text="охлаждения для обогрева здания. "/><LineBreak/><Run Text="      "/><Run Text=" "/><Run Text="Это означает, что мы можем удовлетворить почти все наши потребности. "/><LineBreak/><Run/></TextBlock>
+        <Image Source="/Source/News/second.jpg" Margin="140,1594,104,1323" />
+        <Image Source="/Source/News/third.jpeg" Margin="140,2122,104,800" />
+        <Image Source="/Source/News/four.jpg" Margin="140,2594,104,162" />
+    </Grid>
+</Page>

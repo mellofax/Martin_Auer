@@ -1,0 +1,53 @@
+﻿<Window x:Class="Autorization.Pages.Order"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Autorization.Pages"
+        mc:Ignorable="d"
+        Height="435.219" Width="450" ResizeMode="NoResize" WindowStyle="SingleBorderWindow" Icon="/Source/Icon/restoran.ico">
+    <Grid>
+        <ScrollViewer Margin="47,55,28,228">
+            <WrapPanel Name="menu" HorizontalAlignment="Left" VerticalAlignment="Top" Height="123" Width="359" ScrollViewer.VerticalScrollBarVisibility="Visible"/>
+        </ScrollViewer>
+        <TextBlock HorizontalAlignment="Left" Margin="27,23,0,0" TextWrapping="Wrap" FontSize="25" FontFamily="Arial black" Text="Вы заказали :" VerticalAlignment="Top" Height="32" Width="206"/>
+        <ComboBox Name="Place" HorizontalAlignment="Left" Margin="27,239,0,0" FontSize="20" VerticalAlignment="Top" Width="226" IsReadOnly="True">
+            <ComboBoxItem Content="City-Arkaden" IsSelected="True"/>
+            <ComboBoxItem Content="Fernitz"/>
+            <ComboBoxItem Content="Murpark"/>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="27,202,0,0" TextWrapping="Wrap" FontSize="20" FontFamily="Arial black" Text="Выберите адрес" VerticalAlignment="Top" Height="32" Width="290"/>
+        <TextBlock HorizontalAlignment="Left" Margin="27,290,0,0" TextWrapping="Wrap" FontSize="20" FontFamily="Arial black" Text="Введите кол-во людей" VerticalAlignment="Top" Height="32" Width="262"/>
+        <Button Content="+" FontSize="20" Margin="108,322,285,37" Click="Button_Add"/>
+        <TextBlock Name="Col" Text="1" FontSize="24" Margin="78,322,336,37"/>
+        <Button Content="-" FontSize="20" Margin="27,322,366,37" Click="Button_Minus"/>
+        <Button Name="Complete" Content="Заказать" FontSize="20" FontFamily="Arial black" Margin="287,339,28,20" Click="Complete_Click"/>
+        <Grid Name="Message" Background="Gray" HorizontalAlignment="Left" Height="84" Margin="0,322,0,0" VerticalAlignment="Top" Width="444" Visibility="Hidden">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="77*"/>
+                <ColumnDefinition Width="71*"/>
+            </Grid.ColumnDefinitions>
+            <Image Name="ExitButton" Margin="179,-57,13,100" MouseDown="ExitButton_MouseDown" Grid.Column="1" RenderTransformOrigin="-0.679,-0.229">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="83.106"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+                <Image.Style>
+                    <Style TargetType="{x:Type Image}">
+                        <Setter Property="Source" Value="/Source/Autorization/Крест(1).png"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Source" Value="/Source/Autorization/Крест(2).png"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Style>
+            </Image>
+            <TextBlock Text="Ваш заказ принят, ожидайте!" FontFamily="Arial black" FontSize="22" Margin="30,24,37,0" Grid.ColumnSpan="2"/>
+        </Grid>
+    </Grid>
+</Window>

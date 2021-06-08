@@ -1,0 +1,14 @@
+﻿<Window x:Class="Autorization.Pages.Message"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Autorization.Pages"
+        mc:Ignorable="d"
+        Title="Рассылка" Height="313.216" Width="357.93" ResizeMode="NoResize" WindowStyle="SingleBorderWindow" Icon="/Source/Icon/restoran.ico">
+    <Grid>
+        <TextBlock Text="Рассылка сообщений" FontSize="20" FontFamily="arial black" Margin="43,10,52,245"/>
+        <TextBlock Text="Отправить сообщение" FontSize="20" FontFamily="arial black" Margin="28,239,36,10" Style="{DynamicResource panel}" MouseDown="TextBlock_MouseDown"/>
+        <TextBox Name="Text" MaxLength="250" Text="" FontSize="35" ScrollViewer.VerticalScrollBarVisibility="Visible" Margin="0,39,0,50" AcceptsReturn="True"/>
+    </Grid>
+</Window>

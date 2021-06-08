@@ -1,0 +1,27 @@
+﻿<Page x:Class="Autorization.Pages.Story"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Autorization.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="3350" d:DesignWidth="900"
+      Title="Story">
+
+    <Grid Background="White">
+        <TextBlock FontSize="35" FontFamily="Arial Black" Margin="64,40,48,3218"><Run Text="   Вообще-то у меня аллергия на муку."/><LineBreak/><Run Text="     Я против ржаной муки в частности."/></TextBlock>
+        <Polygon Stroke="Black" Points="650,150,250,150"/>
+        <TextBlock FontSize="20" Margin="86,190,48,3036"><Run Text="            Признаюсь, это звучит необычно, когда это говорит пекарь."/><LineBreak/><Run Text="          Тогда многие качают головой и говорят: не возможно так"/><LineBreak/><Run Text="                   делать свою работу! И тогда я говорю: совсем наоборот,"/><LineBreak/><Run Text="                                                что я люблю хлеб."/></TextBlock>
+        <Image Source="/Source/Story/first.jpg" Margin="224,319,204,2365" />
+        <TextBlock FontSize="35" FontFamily="Arial Black" Margin="224,1052,176,2164"><Run Text="  ВРЕМЕНА ЛЮБЯТ ДРУГ"/><LineBreak/><Run Text="     ДРУГА, ИЗМЕНИТЬ "/><LineBreak/><Run Text="     РЕМЕСЛО НЕЛЬЗЯ"/></TextBlock>
+        <TextBlock FontSize="20" Margin="86,1191,114,1994"><Run Text="       В нашем родовом доме на Грацер Дитрихштайнплац уже с 1688 г."/><LineBreak/><Run Text="  пекли хлеб. Ходят слухи даже, что в 1347 году уже работала первая печь.    "/><LineBreak/><Run Text="       Первый хлеб представлял собой подобие запечённой кашицы, "/><LineBreak/><Run Text="     "/><Run Text="приготовленной из крупы и воды, а также мог стать результатом"/><LineBreak/><Run Text="    "/><Run Text=" случайного приготовления или намеренных экспериментов с водой и"/><LineBreak/><Run Text="                                                     "/><Run Text=" мукой."/></TextBlock>
+        <Image Source="/Source/Story/1.png" Margin="190,1340,398,1519" />
+        <Image Source="/Source/Story/2.png" Margin="86,1831,398,1211" />
+        <Image Source="/Source/Story/3.png" Margin="540,1701,48,1211" />
+        <Image Source="/Source/Story/5.png" Margin="190,2144,142,763" />
+        <TextBlock FontSize="35" FontFamily="Arial Black" Margin="122,2592,48,635"><Run Text="    Сделать его лучше каждый день,"/><LineBreak/><Run Text="   возможно, только п"/><Run Text="ройдя"/><Run Text=" через"/><LineBreak/><Run Text="        "/><Run Text="   миллионы попыток"/><Run Text="."/></TextBlock>
+        <Polygon Stroke="Black" Points="700,2740,250,2740"/>
+        <TextBlock FontSize="20" Margin="122,2766,66,414"><Run Text="            Для первых видов хлеба было много способов заквашивания теста. "/><LineBreak/><Run Text="    "/><Run Text="Можно было использовать в качестве дрожжей бактерии, имеющиеся в"/><LineBreak/><Run Text="   "/><Run Text=" воздухе.  Для это нужно было только оставить тесто на открытом воздухе"/><LineBreak/><Run Text="             "/><Run Text=" на какое-то время перед выпечкой. Эта технология до сих пор"/><LineBreak/><Run Text="               "/><Run Text=" используется при изготовлении хлебной закваски."/></TextBlock>
+        <Image Source="/Source/Story/6.png" Margin="224,2941,193,65" />
+    </Grid>
+</Page>

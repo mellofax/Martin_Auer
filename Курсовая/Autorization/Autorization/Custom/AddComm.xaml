@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="Autorization.Custom.AddComm"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Autorization.Custom"
+             mc:Ignorable="d" Height="409.5" Width="885">
+    <Grid Background="White">
+        <Rectangle Stroke="Black" Margin="33,10,41,10"/>
+        <TextBox Name="Tema" HorizontalAlignment="Left" Margin="66,20,0,0" TextWrapping="Wrap" FontSize="22" FontFamily="Arial Black" VerticalAlignment="Top" Height="38" Width="733"/>
+        <TextBlock HorizontalAlignment="Left" Margin="66,58,0,0" TextWrapping="Wrap" Foreground="Gray" FontSize="20" Text="Отзыв о ресторане MARTIN AUER" VerticalAlignment="Top" Height="28" Width="733"/>
+        <TextBox Name="Text" HorizontalAlignment="Left" Margin="66,91,0,0" TextWrapping="Wrap" FontSize="20" VerticalAlignment="Top" Height="98" Width="733"/>
+        <TextBlock HorizontalAlignment="Left" Margin="66,190,0,0" TextWrapping="Wrap" FontSize="20" Foreground="Green" Text="Достоинства: " VerticalAlignment="Top" Height="30" Width="130"/>
+        <TextBox Name="Dost" HorizontalAlignment="Left" Margin="66,226,0,0" TextWrapping="Wrap" FontSize="20" VerticalAlignment="Top" Height="46" Width="733"/>
+        <TextBlock HorizontalAlignment="Left" Margin="66,272,0,0" TextWrapping="Wrap" FontSize="20" Foreground="Red" Text="Недостатки: " VerticalAlignment="Top" Height="34" Width="130"/>
+        <TextBox Name="Nedo" HorizontalAlignment="Left" Margin="66,312,0,0" TextWrapping="Wrap" FontSize="20" VerticalAlignment="Top" Height="42" Width="733"/>
+        <TextBlock HorizontalAlignment="Left" Margin="346,359,0,0" TextWrapping="Wrap" FontSize="20" Foreground="White" Text=" Оставить отзыв " VerticalAlignment="Top" Height="30" Width="164" MouseDown="Addcom">
+            <TextBlock.Style>
+                <Style TargetType="TextBlock">
+                    <Setter Property="Background" Value="Green"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="LimeGreen"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+    </Grid>
+</UserControl>

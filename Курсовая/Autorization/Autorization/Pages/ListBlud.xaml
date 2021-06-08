@@ -1,0 +1,14 @@
+﻿<Window x:Class="Autorization.Pages.ListBlud"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Autorization.Pages"
+        mc:Ignorable="d"
+        Title="Список блюд" Height="280.839" Width="347.219" ResizeMode="NoResize" WindowStyle="SingleBorderWindow" Icon="/Source/Icon/restoran.ico">
+    <Grid>
+        <ScrollViewer>
+            <TextBlock Name="List" FontSize="20" Height="224" Width="314"/>
+        </ScrollViewer>
+    </Grid>
+</Window>

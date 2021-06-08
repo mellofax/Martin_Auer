@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="Autorization.Custom.Find"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Autorization.Custom"
+             mc:Ignorable="d"
+             d:DesignWidth="873" Height="43.325">
+    <Grid Background="White">
+        <TextBox Name="FindText" Panel.ZIndex="1" BorderThickness="2" BorderBrush="Green" FontSize="30" Padding="10,0" TextChanged="FindText_TextChanged"/>
+        <TextBlock Panel.ZIndex="1" IsHitTestVisible="False" Text="Введите текст для поиска по названию" FontSize="30" Padding="10,0">
+            <TextBlock.Style>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Hidden"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=FindText}" Value="">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="43" Stroke="Black" StrokeThickness="4" VerticalAlignment="Top" Width="873"/>
+    </Grid>
+</UserControl>

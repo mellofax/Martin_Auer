@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="Autorization.Custom.Comm"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Autorization.Custom"
+             mc:Ignorable="d" d:DesignWidth="873" Height="409.5">
+    <Grid Background="White">
+        <Image Source="/Custom/Control.jpg" Margin="722,-6,68,300"/>
+        <Rectangle Stroke="Black" Margin="33,10,41,10"/>
+        <TextBlock Name="Tema" HorizontalAlignment="Left" Margin="66,20,0,0" TextWrapping="Wrap" FontSize="22" FontFamily="Arial Black" Text="Tema" VerticalAlignment="Top" Height="38" Width="766"/>
+        <TextBlock HorizontalAlignment="Left" Margin="66,58,0,0" TextWrapping="Wrap" Foreground="Gray" FontSize="20" Text="Отзыв о ресторане MARTIN AUER" VerticalAlignment="Top" Height="28" Width="733"/>
+        <TextBlock Name="Text" HorizontalAlignment="Left" Margin="66,92,0,0" TextWrapping="Wrap" FontSize="20" Text="Text" VerticalAlignment="Top" Height="98" Width="766"/>
+        <TextBlock HorizontalAlignment="Left" Margin="66,190,0,0" TextWrapping="Wrap" FontSize="20" Foreground="Green" Text="Достоинства: " VerticalAlignment="Top" Height="30" Width="130"/>
+        <TextBlock Name="Dost" HorizontalAlignment="Left" Margin="66,226,0,0" TextWrapping="Wrap" FontSize="20" Text="TextBlock" VerticalAlignment="Top" Height="46" Width="766"/>
+        <TextBlock HorizontalAlignment="Left" Margin="66,272,0,0" TextWrapping="Wrap" FontSize="20" Foreground="Red" Text="Недостатки: " VerticalAlignment="Top" Height="34" Width="130"/>
+        <TextBlock Name="Nedo" HorizontalAlignment="Left" Margin="66,312,0,0" TextWrapping="Wrap" FontSize="20" Text="TextBlock" VerticalAlignment="Top" Height="42" Width="766"/>
+        <TextBlock Name="Info" HorizontalAlignment="Left" Margin="66,360,0,0" TextWrapping="Wrap" FontSize="20" Text="User, 12.05.2021" VerticalAlignment="Top" Height="28" Width="381"/>
+    </Grid>
+</UserControl>

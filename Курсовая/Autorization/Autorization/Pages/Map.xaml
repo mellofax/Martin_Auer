@@ -1,0 +1,88 @@
+﻿<Page x:Class="Autorization.Pages.Map"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Autorization.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="3350" d:DesignWidth="900"
+      Title="Map">
+
+    <Grid Background="White">
+        <Image Source="/Source/Map/Map.png" Margin="0,10,0,2874" />
+        <TextBlock Text="Наши филиалы" FontSize="40" FontFamily="Arial Black" Margin="286,526,255,2768"/>
+        <Image Name="Coffee" Margin="227,581,563,2608" Source="/Source/Map/coffe.png" MouseDown="Coffee_MouseDown" Cursor="Hand"/>
+        <Image Name="Blun" Source="/Source/Map/blun.png" Margin="385,581,374,2608" MouseDown="Blun_MouseDown" Cursor="Hand"/>
+        <Image Name="SO" Source="/Source/Map/SO.png" Margin="557,581,214,2608" MouseDown="SO_MouseDown" Cursor="Hand"/>
+        
+        <Polygon Stroke="Black" Points="800,800,110,800"/>
+        <TextBlock Text="ЦЕНТР ГРАЦА" FontSize="30" Margin="326,810,343,2498"/>
+        <Polygon Stroke="Black" Points="800,860,110,860"/>
+        
+        <TextBlock Text="Адрес                 Пон-Пят       Суббота        Воскр/Праздники        Телефон" FontSize="20" Margin="123,872,94,2440"/>
+        <Polygon Stroke="Gray" Points="800,910,110,910"/>
+        <TextBlock Name="text1" Text="Dietrichsteinplatz 13  06:30-18:30       06:30-17:00                   07:00-13:00                 0316 / 80 40 10" FontSize="16" Margin="111,915,-111,-915"/>
+        <Polygon Stroke="Gray" Points="800,940,110,940"/>
+        <TextBlock Name="text2" Text="Europaplatz 5             05:30-18:00       06:30-18:00                   06:30-18:30                 0316 / 80 40 22" FontSize="16" Margin="111,945,-111,-915"/>
+        <Polygon Stroke="Gray" Points="800,970,110,970"/>
+        <TextBlock Name="text3" Text="Hans-Sachs-Gasse 4   07:00-18:30       08:00-18:00                  09:00-17:00                 0316 / 80 40 70" FontSize="16" Margin="111,975,-111,-915"/>
+        <Polygon Stroke="Gray" Points="800,1000,110,1000"/>
+        <TextBlock Name="text4" Text="Hauptplatz 12             06:30-19:00       07:00-18:30                  09:00-18:00                 0316 / 80 40 80" FontSize="16" Margin="111,1005,-111,-915"/>
+        <Polygon Stroke="Gray" Points="800,1030,110,1030"/>
+        <TextBlock Name="text5" Text="Heinrichstraße 56        06:30-18:00       07:00-12:30	                 06:30-11:00                0316 / 80 40 26" FontSize="16" Margin="111,1035,-111,-915"/>
+        <Polygon Stroke="Gray" Points="800,1060,110,1060"/>
+        <TextBlock Name="text6" Text="Jakominiplatz 15         06:00-18:30       07:00-17:00	                                                    0316 / 80 40 25" FontSize="16" Margin="111,1065,-111,-915"/>
+        <Polygon Stroke="Gray" Points="800,1090,110,1090"/>
+        <TextBlock Name="text7" Text="Kaiser-Josef-Platz 4     06:30-18:30       06:30-14:00	                                                    0316 / 80 40 35" FontSize="16" Margin="111,1095,-111,-915"/>
+        <Polygon Stroke="Gray" Points="800,1120,110,1120"/>
+        <TextBlock Name="text8" Text="Körösistraße 64           06:30-18:00       07:00-18:00	                 07:00-18:00                 0316 / 80 40 30" FontSize="16" Margin="111,1125,-111,-915"/>
+        <Polygon Stroke="Gray" Points="800,1150,110,1150"/>
+        <TextBlock Name="text9" Text="Ruckerlberggürtel 24  06:30-18:00       07:00-12:30	                 07:00-12:00	                0316 / 80 40 65" FontSize="16" Margin="111,1155,-111,-915"/>
+        <Polygon Stroke="Gray" Points="800,1180,110,1180"/>
+        <TextBlock Name="text10" Text="Stubenberggasse 10   06:30-19:00       07:00-18:00	                 08:00-18:00	                0316 / 80 40 90" FontSize="16" Margin="111,1185,-111,-915"/>
+        <Polygon Stroke="Gray" Points="800,1210,110,1210"/>
+        <TextBlock Name="text11" Text="Sparkassenplatz 4       07:15-14:00       07:00-12:30                  07:00-12:00                 0316 / 80 40 48" FontSize="16" Margin="111,1215,-111,-915"/>
+        <Polygon Stroke="Gray" Points="800,1240,110,1240"/>
+        <TextBlock Name="text12" Text="Zinzendorfgasse 29     06:30-19:00       07:00-18:00                  07:00-18:00                0316 / 80 40 32" FontSize="16" Margin="111,1245,-111,-915"/>
+        <Polygon Stroke="Gray" Points="800,1270,110,1270"/>
+        <TextBlock Name="text13" Text="Mariahilferstraße 11    06:30-18:00       07:00-12:30                  07:00-12:00                0316 / 80 40 74" FontSize="16" Margin="111,1275,-111,-915"/>
+        <Polygon Stroke="Gray" Points="800,1300,110,1300"/>
+
+        <Polygon Stroke="Black" Points="800,1350,110,1350"/>
+        <TextBlock Text="ВЕНА И КАРИНТИЯ" FontSize="30" Margin="326,1358,293,1950"/>
+        <Polygon Stroke="Black" Points="800,1410,110,1410"/>
+
+        <TextBlock Text="Адрес                 Пон-Пят       Суббота        Воскр/Праздники        Телефон" FontSize="20" Margin="111,1422,106,1890"/>
+        <Polygon Stroke="Gray" Points="800,1460,110,1460"/>
+        <TextBlock Name="text14" Text="City-Arkaden              08:00-19:00       08:00-18:00	                                                    0463 / 51 42 85" FontSize="16" Margin="111,1465,-111,-915"/>
+        <Polygon Stroke="Gray" Points="800,1490,110,1490"/>
+        <TextBlock Name="text15" Text="Alter Platz 1                08:00-18:00       08:00-17:30	                                                    0316 / 80 40 49" FontSize="16" Margin="111,1495,-111,-915"/>
+        <Polygon Stroke="Gray" Points="800,1520,110,1520"/>
+        <TextBlock Name="text16" Text="Plankengasse 1           09:00-18:00       09:00-16:30                                                     001 / 51 25 852" FontSize="16" Margin="111,1525,-111,-915"/>
+
+        <Polygon Stroke="Black" Points="800,1580,110,1580"/>
+        <TextBlock Text="ГРАЦ И ОКРЕСТНОСТИ" FontSize="30" Margin="326,1590,239,1718"/>
+        <Polygon Stroke="Black" Points="800,1640,110,1640"/>
+
+        <TextBlock Text="Адрес                 Пон-Пят       Суббота        Воскр/Праздники        Телефон" FontSize="20" Margin="111,1654,106,1658"/>
+        <Polygon Stroke="Gray" Points="800,1690,110,1690"/>
+        <TextBlock Name="text17" Text="Center West                06:30-18:00       07:00-12:30                  07:00-12:00                0316 / 80 40 74" FontSize="16" Margin="111,1695,-111,-915"/>
+        <Polygon Stroke="Gray" Points="800,1720,110,1720"/>
+        <TextBlock Name="text18" Text="Citypark                      08:00-19:00       08:00-18:00                  07:10-12:20                0316 / 80 40 29" FontSize="16" Margin="111,1725,-111,-915"/>
+        <Polygon Stroke="Gray" Points="800,1750,110,1750"/>
+        <TextBlock Name="text19" Text="Feldkirchen                 09:00-19:00       09:00-18:00                  07:00-11:30                0316 / 80 40 57" FontSize="16" Margin="111,1755,-111,-915"/>
+        <Polygon Stroke="Gray" Points="800,1780,110,1780"/>
+        <TextBlock Name="text20" Text="Fernitz                         06:30-18:00       07:00-1:30                    07:00-13:00                0316 / 80 40 46" FontSize="16" Margin="111,1785,-111,-915"/>
+        <Polygon Stroke="Gray" Points="800,1810,110,1810"/>
+        <TextBlock Name="text21" Text="Murpark                      08:00-19:00       08:00-18:00                  07:00-12:00                0316 / 80 40 88" FontSize="16" Margin="111,1815,-111,-915"/>
+        <Polygon Stroke="Gray" Points="800,1840,110,1840"/>
+        <TextBlock Name="text22" Text="Neufeldweg 99           06:00-18:30       06:30-13:00                  07:00-12:00                0316 / 80 40 47" FontSize="16" Margin="111,1845,-111,-915"/>
+        <Polygon Stroke="Gray" Points="800,1870,110,1870"/>
+        <TextBlock Name="text23" Text="Shopping Nord           08:00-19:00       08:00-18:00                  07:00-12:00                0316 / 80 40 75" FontSize="16" Margin="111,1875,-111,-915"/>
+        <Polygon Stroke="Gray" Points="800,1900,110,1900"/>
+        <TextBlock Name="text24" Text="LKH-Eingang               06:30-18:00       07:00-12:30                  07:00-12:00                0316 / 80 40 44" FontSize="16" Margin="111,1905,-111,-915"/>
+        <Polygon Stroke="Gray" Points="800,1930,110,1930"/>
+        <TextBlock Name="text25" Text="Waltendorfer               06:30-18:30       07:00-18:00                  07:00-18:00                0316 / 80 40 58" FontSize="16" Margin="111,1935,-111,-915"/>
+        <Image Source="/Source/Map/mapris.jpg" Margin="0,2019,-10,0" HorizontalAlignment="Left" Width="910" />
+    </Grid>
+</Page>

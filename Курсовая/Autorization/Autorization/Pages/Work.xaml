@@ -1,0 +1,37 @@
+﻿<Page x:Class="Autorization.Pages.Work"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="3350" d:DesignWidth="900"
+      Title="Work">
+
+    <Grid Background="White">
+        <MediaElement Name="Video" HorizontalAlignment="Left" Height="497" Margin="10,10,0,0" VerticalAlignment="Top" Width="880" Source="c:\users\nikita\desktop\autorization\autorization\source\work\vidos.mp4" LoadedBehavior="Play" Volume="0" MediaEnded="RefreshVideo"/>
+        <TextBlock FontSize="30" Margin="114,548,86,2578"><Run Text="        Все сочетается в действительно хорошем"/><LineBreak/><Run Text="   хлебе. На самом деле с нашими коллегами все"/><LineBreak/><Run Text="        обстоит так же. Мы стоим вместе, будь то "/><LineBreak/><Run Text="  выпечка, продажа или организация, и мы все "/><LineBreak/><Run Text="                                   вместе. "/></TextBlock>
+        <TextBlock Text="    РАБОТА В MARTIN AUER " FontSize="45" FontFamily="Arial Black" Margin="92,777,56,2514"/>
+        <TextBlock Foreground="Gray" FontSize="25" Margin="248,876,239,2428"><Run Text="              "/><Run Text=" "/><Run Text="ОБЛАСТ"/><Run Text="И"/><Run Text=" РАБОТЫ "/></TextBlock>
+        <Polygon Stroke="Black" Points="800,950,90,950"/>
+        <TextBlock FontSize="30" FontFamily="Arial Black" Text=" Сервис" Margin="362,970,382,2338"/>
+        <Grid HorizontalAlignment="Left" Height="1137" Margin="74,1011,0,0" VerticalAlignment="Top" Width="740">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="215*"/>
+                <RowDefinition Height="923*"/>
+            </Grid.RowDefinitions>
+            <TextBlock FontSize="25" Margin="0,0,0,114" Grid.RowSpan="2"><Run Text="   "/><Run Text="То, что мы здесь друг для друга, всегда должно относиться к"/><LineBreak/><Run Text=" "/><Run Text=" нам. В наших магазинах и кафе это также относится к более "/><LineBreak/><Run Text="  "/><Run Text="чем 15 000 гостей и фанатов, которые посещают нас каждый"/><LineBreak/><Run Text=" "/><Run Text=" день. Мы обращаем внимание на них так же, как и на наших "/><LineBreak/><Run Text="                                              "/><Run Text="коллег."/><LineBreak/><Run Text="      "/><Run Text="Коллеги. С таким отношением мы создаем особенн"/><Run Text="ую"/><LineBreak/><Run Text="Атмосфер"/><Run Text="у"/><Run Text=" в благодар"/><Run Text="я"/><Run Text=" обстановке. Наша цель - ответственно"/><LineBreak/><Run Text=" "/><Run Text=" работать с дружелюбными людьми. Потому что мы знаем, "/><LineBreak/><Run Text="                  "/><Run Text="насколько это может быть особенным. "/></TextBlock>
+            <Image Source="/Source/Work/Work.png" Margin="10,89.5,-10,697" Grid.Row="1"/>
+            <TextBlock FontSize="25" Margin="100,295.5,84,270" Grid.Row="1"><Run Text="     "/><Run Text="УЗНАЙТЕ СВОИ"/><Run Text="Х"/><Run Text=" БУДУЩИ"/><Run Text="Х"/><Run Text=" КОЛЛЕГ"/><Run Text="АХ"/></TextBlock>
+            <Image Source="/Source/Work/Work2.jpg" Margin="0,360.5,10,39" Grid.Row="1"/>
+        </Grid>
+        <Polygon Stroke="Black" Points="800,2150,90,2150"/>
+        <TextBlock Text="  Организация" FontSize="30" FontFamily="Arial Black" Margin="312,2171,322,1137" />
+        <Grid Margin="0,2218,0,0">
+            <TextBlock FontSize="25" Margin="50,10,34,875" ><Run Text="                    "/><Run Text="От пекарни до офиса всего несколько шагов."/><LineBreak/><Run Text="       "/><Run Text="Здесь вы познакомитесь с Мартином, его женой Барбарой и"/><Run Text=" "/><LineBreak/><Run Text="   "/><Run Text="небольшой, но хорошей организационной командой. На повестке"/><LineBreak/><Run Text="         "/><Run Text=" дня самостоятельная работа, критическое размышление, "/><LineBreak/><Run Text="   "/><Run Text="уважительный обмен мнениями и смелые идеи. И много смеха и "/><LineBreak/><Run Text="    "/><Run Text="непринужденности. Не только когда все собираются на обед или "/><LineBreak/><Run Text="                         "/><Run Text="вместе дегустируют новые продукты. "/></TextBlock>
+            <Image Source="/Source/Work/Work3.png" Margin="102,257,88,675"/>
+            <Image Source="/Source/Work/Slogo.png" Margin="136,1026,108,34"/>
+        </Grid>
+        <Polygon Stroke="Black" Points="800,2680,90,2680"/>
+        <Image Source="/Source/Work/Image.jpg" Margin="138,2719,111,155"/>
+    </Grid>
+</Page>

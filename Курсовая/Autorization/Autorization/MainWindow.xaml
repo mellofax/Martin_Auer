@@ -1,0 +1,130 @@
+﻿<Window x:Class="Autorization.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="494" Width="365" WindowStyle="None" ResizeMode="NoResize" Icon="/Source/Icon/restoran.ico" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="White" Offset="0"/>
+            <GradientStop Color="White" Offset="1"/>
+            <GradientStop Color="White" Offset="0.509"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="300"/>
+            <RowDefinition Height="90"/>
+        </Grid.RowDefinitions>
+        <!--Кнопки сворачивания и закрытия-->
+        <Grid Name="ToolBar" Grid.Row="0" MouseDown="ToolBar_MouseDown">
+            <Polygon Fill="White" Opacity="0.2" Points="107,0, 115,7, 249,7, 257,0"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Image Name="MinButton" Height="13" Width="13" Margin="5" MouseDown="MinButton_MouseDown">
+                    <Image.Style>
+                        <Style TargetType="{x:Type Image}">
+                            <Setter Property="Source" Value="Source/Autorization/Свернуть(1).png"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Source" Value="Source/Autorization/Свернуть(2).png"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Image.Style>
+                </Image>
+                <Image Name="ExitButton" Height="13" Width="13" Margin="5,5,10,5" MouseDown="ExitButton_MouseDown">
+                    <Image.Style>
+                        <Style TargetType="{x:Type Image}">
+                            <Setter Property="Source" Value="Source/Autorization/Крест(1).png"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Source" Value="Source/Autorization/Крест(2).png"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Image.Style>
+                </Image>
+            </StackPanel>
+        </Grid>
+        <!-- Картинка -->
+        <Grid Name="LogoContainer" MouseDown="LogoContainer_MouseDown" Margin="-91,-16,-79,0" Grid.RowSpan="2">
+            <Image Source="/Source/Autorization/main.jpg" Margin="0,10,0,-9"/>
+        </Grid>
+        <!--Меню-->
+        <TextBox Name="tb1" MaxLength="15" Grid.Row="2"  Style="{DynamicResource TB}" Margin="25,61,27,204"/>
+        <PasswordBox PasswordChanged="ChangePas" Name="tb2"  MaxLength="15" Style="{DynamicResource Pass}" Grid.Row="2" Margin="25,133,27,132"/>
+        <TextBox Name="tb3"  MaxLength="25" Grid.Row="1"  Style="{DynamicResource TB}" Margin="25,90,27,275" Grid.RowSpan="2" Visibility="Hidden"/>
+        <TextBlock Name="Em" Text="Email" Grid.Row="1" Margin="29,91,27,279" IsHitTestVisible="False" FontSize="22" Grid.RowSpan="2" Foreground="{x:Null}">
+            <TextBlock.Style>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=tb3}" Value="">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+        <TextBlock Text="Login" Grid.Row="2" Margin="29,61,27,204" IsHitTestVisible="False" FontSize="22">
+            <TextBlock.Style>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Hidden"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=tb1}" Value="">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+        <TextBlock Name="TextPassword" Text="Password" Grid.Row="2"  Margin="29,133,27,132" IsHitTestVisible="False" FontSize="22"/>
+        <Grid Margin="29,201,27,55" Grid.Row="2">
+            <Button Name="ButtonLogin" Content="Войти" FontSize="14" Foreground="White" Grid.Row="2" Style="{StaticResource Autorization}" Click="Autorization_Click"/>
+        </Grid>
+        <Polygon Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" Stroke="#FF51555C" Points="0,0,330,0" Margin="25,0,25,30"/>
+        <TextBlock Text="Или другое" Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" Foreground="#FF51555C" FontSize="14" TextAlignment="Center" Margin="0,0,0,22" Background="White" Width="100"/>
+        <TextBlock Name="Registr" Text="Создать учетную запись" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="2" FontSize="16" FontWeight="DemiBold" Margin="87,279,94,0" MouseDown="RegistrationOrLogin">
+            <TextBlock.Style>
+                <Style TargetType="TextBlock">
+                    <Setter Property="Foreground" Value="#FF078AC9"/>
+                    <Style.Triggers>
+                        <EventTrigger RoutedEvent="MouseEnter">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <ColorAnimation Storyboard.TargetProperty="Foreground.Color" To="Black" Duration="0:0:0.2"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                        <EventTrigger RoutedEvent="MouseLeave">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <ColorAnimation Storyboard.TargetProperty="Foreground.Color" To="#FF078AC9" Duration="0:0:0.2"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+        <Grid Name="LogMenu" Margin="0,10,0,21" Grid.Row="3" Background="#FF51555C" Visibility="Hidden">
+            <Image Height="13" Width="13" Margin="342,10,10,36" MouseDown="Log_Click">
+                <Image.Style>
+                    <Style TargetType="{x:Type Image}">
+                        <Setter Property="Source" Value="Source/Autorization/Крест(1).png"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Source" Value="Source/Autorization/Крест(2).png"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Style>
+            </Image>
+            <TextBlock Name="LogText" FontSize="16" Margin="10,6,18,30"/>
+            <TextBlock Name="Log" FontSize="16" Margin="10,29,18,7"/>
+        </Grid>
+    </Grid>
+</Window>
